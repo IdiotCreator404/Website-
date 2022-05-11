@@ -1,332 +1,198 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landing h1 {
+  text-align: center;
+  margin-top: 20px;
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-body {
-  overflow-x: hidden;
-}
-header {
-  position: relative;
-  height: 100vh;
-}
-header .logo {
-  position: relative;
-  padding-left: 50px;
-  padding-top: 12px;
-  color: #284f8f;
-}
-header nav {
-  position: absolute;
-  top: 23px;
-  left: 20px;
+.links {
+  margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-header nav ul {
-  position: relative;
-  display: inline-flex;
-  left: 450px;
-  /* position: absolute; */
-}
-header nav ul li {
+.links li {
   list-style: none;
-  padding-right: 20px;
 }
-header nav ul li a {
+.links li a {
+  position: relative;
+  width: 100%;
+  font-size: 20px;
   text-decoration: none;
   color: black;
-  font-size: 20px;
 }
-header nav ul li a:hover {
-  border-bottom: 2px solid #284f8f;
-}
-header nav ul li i {
-  padding-right: 5px;
-}
-header nav .subs a {
+.links li a i {
   position: absolute;
-  left: 1150px;
-  padding: 5px 20px;
-  font-size: 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: white;
-  background: #284f8f;
-}
-header nav button:hover {
-  background: #284f8f;
-  cursor: pointer;
-  color: white;
-}
-header img {
-  position: absolute;
-  height: 100vh;
-  left: 700px;
-  z-index: -1;
-}
-header .content {
-  position: absolute;
-  top: 250px;
-  width: 50%;
-  left: 50px;
-}
-header .content h4 {
-  position: absolute;
-  top: 70px;
-}
-.subscribe {
-  width: 100%;
-  background: #9cc3d55f;
-  height: 47vh;
-}
-
-.subscribe h1 {
-  position: absolute;
-  left: 450px;
-  top: 680px;
-}
-.subscribe input {
-  width: 50%;
-  position: relative;
-  top: 130px;
-  left: 370px;
-  height: 40px;
-  border-radius: 20px;
-  font-size: 16px;
-  padding-left: 20px;
-}
-.subscribe input:hover {
-  border: none;
-}
-.subscribe button {
-  width: 10%;
-  position: relative;
-  top: 150px;
-  left: 625px;
-  height: 40px;
-  font-size: 16px;
-  background: #284f8f;
-  color: white;
-  cursor: pointer;
-  padding: 0px 10px;
-  font-size: 20px;
-  border-radius: 20px;
-}
-div.courses {
-  height: 120vh;
-}
-div.posts {
-  display: flex;
-
-  margin-left: 150px;
-  margin-top: 130px;
-}
-div.courses .post1 {
-  width: 25%;
-  padding: 10px 10px 0 10px;
-  height: 80vh;
-  position: relative;
-  background: white;
   right: 50px;
-  border: 2px solid black;
-  border-radius: 20px;
+  bottom: 0px;
 }
-div.courses .post2 {
-  position: relative;
-  width: 25%;
-  height: 80vh;
-  padding: 10px 10px 0 10px;
-  background: white;
-  margin-left: 40px;
-  border: 2px solid black;
-  border-radius: 20px;
+.landing img {
+  width: 100%;
+  margin-top: 70px;
 }
-div.courses .post3 {
-  width: 25%;
-  position: relative;
-  height: 80vh;
-  padding: 10px 10px 0 10px;
-  background: white;
-  left: 80px;
-  border: 2px solid black;
-  border-radius: 20px;
+.landing .h1 {
+  text-align: left;
+  margin-left: 45px;
 }
-.courses .peter {
-  position: relative;
-  top: 50px;
-  left: 240px;
-}
-.courses h3 {
-  position: relative;
-  top: 80px;
-  left: 390px;
-}
-.posts i {
-  position: relative;
-  font-size: 70px;
-  padding: 30px 0 10px 0;
-  left: 100px;
-  color: #284f8f;
-}
-.posts h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.posts h1 {
-  font-size: 40px;
+.landing p {
+  width: 80%;
+  line-height: 1.5;
+  margin-left: 45px;
   margin-top: 20px;
-  margin-left: 80px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-.posts h4 {
-  text-align: justify;
-  position: relative;
+.landing .peter {
+  text-align: left;
   margin-top: 40px;
+  margin-left: 45px;
+  color: #66023c;
 }
-.posts button {
-  padding: 5px 40px;
-  margin-top: 15px;
-  font-size: 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  background: #284f8f;
-  color: white;
-  margin-left: 60px;
-}
-.contact {
-  margin-top: 100px;
-  height: 110vh;
-  background-color: #9cc3d55f;
-}
-.contact h1 {
-  position: relative;
-  top: 60px;
-  left: 410px;
-}
-.contact h2 {
-  position: relative;
-  top: 90px;
-  left: 320px;
-}
-.contact form {
-  position: relative;
-  top: 150px;
-  left: 400px;
-}
-.contact input {
-  width: 30%;
-  border-radius: 20px;
+.landing a {
   font-size: 20px;
-  padding: 5px 25px;
-  margin-bottom: 20px;
-}
-.contact select {
-  width: 35%;
-  border-radius: 20px;
-  padding: 5px 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.contact form .text {
-  height: 20vh;
-}
-.contact form .submit {
-  padding: 5px 40px;
-  width: 20%;
-  margin-left: 80px;
-  margin-top: 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  background: #284f8f;
-  color: white;
-}
-.img {
-  position: absolute;
-  padding-bottom: 50px;
-  z-index: -1;
-}
-.team {
-  display: inline-flex;
+  margin-left: 45px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .about {
-  position: relative;
-  height: 120vh;
-}
-.about h1.micheal {
-  position: absolute;
-  margin-left: 450px;
-  margin-top: 50px;
-  color: #284f8f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .about img {
-  width: 200px;
+  width: 60%;
+  padding: 20px;
   border-radius: 50%;
+  padding-top: 50px;
 }
-.team {
-  position: relative;
-  top: 320px;
+.about h1 {
+  text-align: center;
 }
-.about .suzal {
-  position: absolute;
-  width: 100%;
-  margin-top: 130px;
+.about p {
+  width: 80%;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 2;
   font-size: 20px;
-  margin-left: 120px;
 }
-.about .hey {
-  position: absolute;
-  top: 200px;
-  left: 570px;
-  color: #284f8f;
+.skills {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.team .user1 {
-  width: 33%;
-  padding-right: 200px;
-  padding-left: 150px;
-}
-.team .user2 {
-  padding-right: 0px;
-  padding-left: -100px;
-}
-.team .user3 {
-  padding-right: 300px;
-  padding-left: 150px;
-}
-.team .user1 img {
-  width: 500px;
-  height: 40vh;
-}
-.team .user2 img {
-  width: 220px;
-  height: 40vh;
-}
-.team .user3 img {
-  width: 220px;
-  height: 40vh;
-}
-.team h2 {
+.skills h1 {
   text-align: center;
-}
-.team h4 {
   width: 100%;
+  color: #66023c;
+}
+.elon {
+  height: 100%;
+  width: 70%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 230px; */
+  box-shadow: 5px 10px 8px 10px #888888;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.elon img {
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
   text-align: center;
 }
-.team button {
+.elon a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.skills .more {
+  padding-top: 90px;
+  animation: suzal 0.5s linear 2s infinite alternate;
+}
+@keyframes suzal {
+  0% {
+    color: #66023c;
+  }
+  100% {
+    color: black;
+  }
+}
+.contact {
   position: relative;
-  margin-left: 40px;
-  height: 40px;
-  font-size: 16px;
-  background: #284f8f;
-  color: white;
-  cursor: pointer;
-  padding: 5px 20px;
-  top: 20px;
-  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.team button i {
-  padding-right: 10px;
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  background: url("./undraw_Developer_activity_re_39tg.png");
+  background-position-y: -100px;
+  background-size: 50%;
+  background-position-x: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.team button .yes {
+form input {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 10vh;
+  font-size: 20px;
+  background: transparent;
+}
+.contact img {
+  width: 60%;
   position: absolute;
-  margin-right: 50px;
+  right: 4px;
+  bottom: 280px;
+  z-index: -1;
+}
+textarea {
+  background-color: transparent;
+  padding: 20px;
+}
+::placeholder {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
+.contact button {
+  width: 60%;
+  margin-top: 50px;
+  padding: 20px 15px;
+  font-size: 20px;
+  border-radius: 2.5em;
+  border: none;
+  background: #66023c;
+  color: white;
 }
